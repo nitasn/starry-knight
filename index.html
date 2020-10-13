@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Starry Knight</title>
+
+    <style>
+        body {
+            background-color: rgb(77, 77, 83);
+        }
+        canvas {
+            background: rgb(51, 49, 49);
+            width: 100%;
+            /* height is done manually with js on this page */
+            border-radius: 2ex;
+            margin-bottom: 10px;
+            border: thin solid rgb(0, 15, 0);
+        }
+        label {
+            color: lightgray;
+        }
+        button {
+            color: lightgray;
+            background-color: rgb(77, 77, 83);
+            border-radius: 7px;
+            padding-top:    3px;
+            padding-bottom: 3px;
+        }
+        button {
+            padding-left:   8px;
+            padding-right:  8px;
+        }
+        /* #play-pause-btn {
+            margin-left: 10px;
+        } */
+        #download-snapshot-link {
+            font-weight: bold;
+        }
+        #download-snapshot-link:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .vertical-dividor {
+            margin-left: 10px;
+            margin-right: 13px;
+            display: inline; 
+            border: 0.5px solid #696969;
+        }
+        #draw-velocities-checkbox {
+            margin-left: 0px;
+        }
+       
+        #canvas {
+            margin-bottom: 10px;
+        }
+
+        #how-to-use-label {
+            display: block;
+            position: absolute;
+            bottom: 5px;
+            left: 15px;
+            /* right: 10px;
+            direction: rtl; */
+            font-size: medium;
+            color: gray;
+        }
+    </style>
+    <link rel="stylesheet" href="slider.css"/>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        const fix_canvas_height = () =>
+            document.getElementById('canvas').style.height = `${window.innerHeight - 120}px`;
+        fix_canvas_height();
+        window.addEventListener('resize', fix_canvas_height);
+        
+    </script>
+
+    <div></div>
+
+    <div class="vertical-dividor"></div>
+
+    <button id="play-pause-btn" onclick="on_play_pause_click()"></button>
+
+    <div class="vertical-dividor"></div>
+
+    <button id="clear-all-btn" onclick="clear_all()">clear all</button>
+
+    <div class="vertical-dividor"></div>
+
+    <input type="checkbox" id="draw-velocities-checkbox"/>
+    <label for="draw-velocities-checkbox">draw velocities</label>
+
+    <div class="vertical-dividor"></div>
+
+    <input type="range" id="traces-length-input" min="0" max="1000" value="300" step="1"/>
+    &nbsp; <label>traces</label>
+
+    <div class="vertical-dividor"></div>
+
+    <label title="If you want to save the current state, or to share it with your friends, you can get a snapshot file that can later be dragged back here."
+            id="download-snapshot-link" onclick="download_snapshot()">
+        get a snapshot
+    </label>
+
+    <div class="vertical-dividor"></div>
+
+    <label id="how-to-use-label">
+        Controls: drag with left mouse to scroll around. Use mouse wheel to zoom.
+        To create new stars, drag with right mouse.
+    </label>
+
+    <script src="canvas.js"></script>
+    <script src="etc.js"></script>
+    <script src="vec.js"></script>
+    <script src="star.js"></script>
+    <script src="universe.js"></script>
+    <script src="camera.js"></script>
+    <script src="snapshot.js"></script>
+    <script src="drawings.js"></script>
+    <script src="trace.js"></script>
+    <script src="key_events.js"></script>
+    <script src="star_being_created.js"></script>
+    <script src="mainloop.js"></script>
+</body>
+</html>
