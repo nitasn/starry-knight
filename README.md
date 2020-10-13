@@ -13,7 +13,7 @@ It's an infinite stretchable pretty-much-copied-from-geogebra-but-prettier maths
 
 click [here](http://u.cs.biu.ac.il/~benhann1/starry_knight/starry%20js/) to try it.
 
-Just sit down and watch stars floating around - accelerating and decelerating, going in orbits, or escaping into outer space.
+Just sit down and watch stars floating around - accelerating and decelerating, going in orbits or escaping into outer space.
 
 Some orbits in action:
 ![casual orbits](https://github.com/nitasn/starry-knight/blob/main/ScreenShot%20Orbits.png?raw=true)
