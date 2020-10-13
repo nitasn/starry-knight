@@ -1,7 +1,6 @@
 # Starry Knight
 
 Starry-knight uses Newtonian physics to calculate positions and velocities of stars.
-escaping into outer space.
 
 Features:
 * Add stars anywhere with whatever mass (and an initial velocity )
