@@ -1,6 +1,6 @@
 # Starry Knight
 
-Starry-knight uses Newtonian physics to draw positions and velocities of stars.
+Starry Knight uses Newtonian physics to draw positions and velocities of stars.
 
 Features:
 * Add stars anywhere with whatever mass (and an initial velocity )
