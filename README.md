@@ -9,7 +9,7 @@ Features:
 * Draw the stars' velocity vectors
 
 The grid itself is implemented over a JS canvas.
-It's an infinite stretchable pretty-much-copied-from-geogebra-but-prettier maths grid.
+It's an infinite stretchable geogebra-like-but-prettier maths grid.
 
 click [here](http://u.cs.biu.ac.il/~benhann1/starry_knight/starry%20js/) to try it.
 
