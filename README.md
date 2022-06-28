@@ -5,7 +5,7 @@ Starry Knight uses Newtonian physics to draw positions and velocities of stars.
 Features:
 * Add stars anywhere with whatever mass (and an initial velocity )
 * Let stars draw traces behind them as they travel
-* Get the current state as JSON (and upload it to reconstruct the situation)
+* Download the current state as a JSON (and upload it to reconstruct the situation)
 * Draw the stars' velocity vectors
 
 The grid itself is implemented over a JS canvas.
