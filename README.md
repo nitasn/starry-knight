@@ -11,7 +11,7 @@ Features:
 The grid itself is implemented over a JS canvas.
 It's an infinite stretchable geogebra-like-but-prettier maths grid.
 
-click [here](http://u.cs.biu.ac.il/~benhann1/starry_knight/starry%20js/) to try it.
+click [here](https://nitasn.github.io/starry-knight/) to try it.
 
 Just sit down and watch stars floating around - accelerating and decelerating, going in orbits or escaping into outer space.
 
